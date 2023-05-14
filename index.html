@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src=./decodificador.js defer></script>
+    <header class="topo">
+        <h1><img src="logo.png"></h1>
+    </header>
+
+    <div class="center">
+        <div>  <h2>Insira o texto</h2>
+            <textarea id="texto-entrada" style= "resize: none" name="nome" value ="" placeholder=
+            "Insira seu texto para codificar ou decodificar apenas com letras minúsculas e sem acento!" 
+            cols="30" rows="22" rows="5" cols="33"></textarea>
+            <input type="submit" value="Codificar" class="botoes" id="btncodificar" onclick="recebetexto()">
+            <input type="submit" value="Decodificar" class="botoes" id="btndescodificar" onclick="recebecodif()">      
+        </div>
+      
+        <div>  <h2>Resultado</h2>
+            <textarea id="texto-saida" style= "resize: none" name="resultado" value ="" cols="30" rows="22" 
+            rows="5" cols="33" ></textarea>
+            <input type="submit" value="Copiar texto" class="botoes" id="copiar" onclick="copiarTexto()">
+        </div>
+        
+        <div>
+            <h3 class="espiao"><img src="espiao.png" alt="imagem do espiao"></h3>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="nota-rodape">
+            <div><img src="nota.png" alt="bloco de notas"></div>
+            <div><p>     Challenge desenvolvido por @leomkx para o programa One, Oracle + Alura.</p></div>
+        </div>
+    </footer>
+   
+</body>
+</html>

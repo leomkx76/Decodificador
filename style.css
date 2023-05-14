@@ -1,0 +1,142 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+    color: #996633;
+}
+
+.topo{
+    width: 1000px;
+    background: #F5ECDA;
+    display: block;
+    margin: 0 auto;
+}
+
+.topo h1{
+    padding-top: 0.5em;
+    margin: 0 0 0 30px;
+}
+
+.center{
+    font-size: 16px;
+    font-weight: bold;
+    width: 1000px;
+    background: #F5ECDA;
+    margin: 0 auto;
+}
+
+.center div {
+    width: 290px;
+    vertical-align: top;
+    margin: 0 20px 10px 20px;
+    display: inline-block;
+}
+
+.center textarea{
+    font-size: 16px;
+    padding: 30;
+    border: white 5px;
+    border-radius: 5px;
+    background: white url(digital.png) center center no-repeat
+}
+
+.center textarea:focus, input:focus, Select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.espiao{
+    margin: 0 0 0 90px;
+}
+
+.botoes{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+    width: 40%;
+    padding: 10px;
+    background: #996633;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 20px 0 ;  
+}
+
+.botoes:hover{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+    width: 40%;
+    padding: 10px;
+    background: #2c1601;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 20px 0 ;   
+}
+
+.rodape{
+    width: 1000px;
+    background: #F5ECDA;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nota-rodape{
+    width: 100%;
+    vertical-align: bottom;
+    display: flex;
+}
+
+.nota-rodape div{
+    margin: 0 10px;
+
+}
+
+@media screen and (max-width: 480px){
+
+    .topo{
+        width: 100%;
+        background: #F5ECDA;
+        display: block;
+        margin: 0 auto;
+    }
+    .topo img{
+        width: 90%;
+
+    }
+    .center{
+            width: 100%;
+            align-items: center;
+           
+    }
+
+    .rodape{
+        width: 100%;
+        background: #F5ECDA;
+   
+    }
+    
+    .nota-rodape{
+        width: 100%;
+        vertical-align: bottom;
+       
+    }
+    
+    .center div {
+        margin: 30px center center 50px;
+    }
+
+    .center div {
+        vertical-align: top;
+        margin: 0 0 0 50px
+        
+    }
+    
+}
