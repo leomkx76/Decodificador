@@ -25,7 +25,7 @@ function decodificar (texto){
 // para codificar
 function recebetexto(){
     let resultado = document.getElementById("texto-entrada").value
-    if(/[.a-z]/gm.test(resultado)){
+    if(/[.a-z !@#:;?.]/gm.test(resultado)){
     document.getElementById("texto-entrada").value = ""
     document.getElementById("texto-saida").innerText = codificar(resultado)
     }
@@ -37,7 +37,7 @@ function recebetexto(){
 // para decodificar
 function recebecodif(){
     let resultado = document.getElementById("texto-entrada").value
-    if(/[.a-z]/gm.test(resultado)){
+    if(/[.a-z !@#:;?.]/gm.test(resultado)){
     document.getElementById("texto-entrada").value = ""
     document.getElementById("texto-saida").innerText = decodificar(resultado) 
 } 
